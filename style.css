@@ -1,0 +1,32 @@
+body {
+    background-color: #24232b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0;
+}
+
+#reloj {
+    font-family: Courier, monospace;
+    font-size: 150px; 
+    color: #8b4bc7;
+    border: 2px solid #7c35ce;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #20232a;
+    box-shadow: 0 0 20px rgba(219, 199, 245, 0.5);
+}
+
+.animar{
+    animation: sacudir 0.6s ease-in-out;
+}
+
+@keyframes sacudir{
+    0% { transform: rotate(0deg) scale(1); }
+    20% { transform: rotate(15deg) scale(1.05); }
+    40% { transform: rotate(-15deg) scale(1.05); }
+    60% { transform: rotate(10deg) scale(1); }
+    80% { transform: rotate(-10deg) scale(1); }
+    100% { transform: rotate(0deg) scale(1); }
+}

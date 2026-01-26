@@ -32,11 +32,16 @@ body {
     100% { transform: rotate(0deg) scale(1); }
 }
 
-@media only screen and (max-width: 375px) {
 
+@media (min-width: 375px) and (max-width: 768px) {
     #reloj {
-        width: 200px;
-        font-size: 42px;
-        height: 100%;
+        font-size: 60px;
+        width: auto;
+    }
+}
+@media (min-width: 820px) and (max-width: 1280px) {
+    #reloj {
+        font-size: 120px;
+        width: auto;
     }
 }

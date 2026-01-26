@@ -10,12 +10,13 @@ body {
 #reloj {
     font-family: Courier, monospace;
     font-size: 150px; 
-    color: #8b4bc7;
-    border: 2px solid #7c35ce;
+    color: white;
+    border: 1px solid white;
     padding: 20px 40px;
     border-radius: 10px;
     background-color: #20232a;
-    box-shadow: 0 0 20px rgba(219, 199, 245, 0.5);
+    box-shadow: 0 0 20px white;
+    width: 730px;
 }
 
 .animar{
@@ -29,4 +30,13 @@ body {
     60% { transform: rotate(10deg) scale(1); }
     80% { transform: rotate(-10deg) scale(1); }
     100% { transform: rotate(0deg) scale(1); }
+}
+
+@media only screen and (max-width: 375px) {
+
+    #reloj {
+        width: 200px;
+        font-size: 42px;
+        height: 100%;
+    }
 }
